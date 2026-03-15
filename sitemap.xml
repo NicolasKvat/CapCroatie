@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://capcroatie.com/blog.html</loc>
+    <lastmod>2026-02-20T17:15:33+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://capcroatie.com/blog.html" />
+  </url>
+  <url>
+    <loc>https://capcroatie.com/destination-detail.html</loc>
+    <lastmod>2026-02-20T17:15:33+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://capcroatie.com/destination-detail.html" />
+  </url>
+  <url>
+    <loc>https://capcroatie.com/hebergement-detail.html</loc>
+    <lastmod>2026-02-20T17:15:33+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://capcroatie.com/hebergement-detail.html" />
+  </url>
+  <url>
+    <loc>https://capcroatie.com/index.html</loc>
+    <lastmod>2026-02-20T17:15:33+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://capcroatie.com/index.html" />
+  </url>
+</urlset>

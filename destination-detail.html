@@ -1,0 +1,329 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubrovnik - La Perle de l'Adriatique | CapCroatie</title>
+    <meta name="description" content="Découvrez Dubrovnik, la perle de l'Adriatique. Explorez ses remparts majestueux, son architecture historique et ses plages spectaculaires avec notre guide complet.">
+<meta name="charset" content="UTF-8">
+<meta http-equiv="content-language" content="fr">
+<link rel="canonical" href="https://capcroatie.com/destination-detail.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0077B6',
+                        'primary-dark': '#005A8C',
+                        'primary-light': '#00A8E8',
+                        secondary: '#F4A261',
+                        'secondary-dark': '#E08B3A',
+                        'secondary-light': '#F7BC8A',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .reveal-on-scroll { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+        .reveal-on-scroll.revealed, .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+        .grain-texture { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E"); }
+        .hero-gradient { background: linear-gradient(135deg, rgba(0,119,182,0.85) 0%, rgba(0,0,0,0.6) 100%); }
+        .bento-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .bento-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,119,182,0.15); }
+        .scroll-smooth { scroll-behavior: smooth; }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-white text-neutral-900 scroll-smooth">
+
+<header role="banner" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-lg border-b border-gray-100/80 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+    <nav id="navMain" aria-label="Navigation principale">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-[72px]">
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-1 group shrink-0" aria-label="CapCroatie - Accueil">
+                    <span class="text-2xl lg:text-[1.7rem] font-extrabold tracking-tight text-gray-900 transition-colors duration-300">
+                        Cap<span class="text-primary">Croatie</span>
+                    </span>
+                    <span class="relative flex h-2 w-2 -mt-3 ml-0.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary/40"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden lg:flex items-center gap-1 xl:gap-2">
+                    <a href="/index.html" class="relative px-3 xl:px-4 py-2 text-[0.9rem] font-medium text-gray-600 hover:text-primary rounded-lg hover:bg-primary-light/10 transition-all duration-200 group">
+                        Guide Complet
+                    </a>
+                    <a href="/destination-detail.html" class="relative px-3 xl:px-4 py-2 text-[0.9rem] font-medium text-gray-600 hover:text-primary rounded-lg hover:bg-primary-light/10 transition-all duration-200 group">
+                        Détail Lieu
+                    </a>
+                    <a href="/hebergement-detail.html" class="relative px-3 xl:px-4 py-2 text-[0.9rem] font-medium text-gray-600 hover:text-primary rounded-lg hover:bg-primary-light/10 transition-all duration-200 group">
+                        Détail Hébergement
+                    </a>
+                    <a href="/blog.html" class="relative px-3 xl:px-4 py-2 text-[0.9rem] font-medium text-gray-600 hover:text-primary rounded-lg hover:bg-primary-light/10 transition-all duration-200 group">
+                        Blog
+                    </a>
+                </div>
+
+                <!-- Desktop CTA & Mobile Hamburger -->
+                <div class="flex items-center gap-3">
+                    <div class="hidden lg:block">
+                        <!-- LANG_SWITCHER -->
+                        <!-- /LANG_SWITCHER -->
+                    </div>
+                    <button id="navHamburger" type="button" class="lg:hidden relative w-10 h-10 flex flex-col items-center justify-center gap-[6px] rounded-xl bg-gray-50 hover:bg-primary/10 transition-colors duration-200" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMobileMenu" onclick="toggleMobileMenu()">
+                        <span class="w-5 h-[2px] bg-gray-700 rounded-full block transition-all origin-center"></span>
+                        <span class="w-5 h-[2px] bg-gray-700 rounded-full block transition-all origin-center"></span>
+                        <span class="w-5 h-[2px] bg-gray-700 rounded-full block transition-all origin-center"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="navMobileMenu" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-xl shadow-gray-200/50 overflow-hidden" aria-hidden="true">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 pb-6">
+                <div class="flex flex-col gap-1">
+                    <a href="/index.html" class="flex items-center gap-3 px-4 py-3 text-[0.95rem] font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 group">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-primary group-hover:scale-125 transition-all duration-200"></span>
+                        Guide Complet
+                    </a>
+                    <a href="/destination-detail.html" class="flex items-center gap-3 px-4 py-3 text-[0.95rem] font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 group">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-primary group-hover:scale-125 transition-all duration-200"></span>
+                        Détail Lieu
+                    </a>
+                    <a href="/hebergement-detail.html" class="flex items-center gap-3 px-4 py-3 text-[0.95rem] font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 group">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-primary group-hover:scale-125 transition-all duration-200"></span>
+                        Détail Hébergement
+                    </a>
+                    <a href="/blog.html" class="flex items-center gap-3 px-4 py-3 text-[0.95rem] font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 group">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-300 group-hover:bg-primary group-hover:scale-125 transition-all duration-200"></span>
+                        Blog
+                    </a>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-100 flex justify-center">
+                    <!-- LANG_SWITCHER -->
+                    <!-- /LANG_SWITCHER -->
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="pt-16 lg:pt-[72px]" role="main">
+    <!-- Breadcrumb -->
+    <div class="py-4 bg-neutral-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex text-sm font-medium text-gray-500" aria-label="Fil d'ariane">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="/" class="hover:text-primary transition-colors">Accueil</a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-gray-400 mx-1" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <a href="#" class="hover:text-primary transition-colors">Destinations</a>
+                        </div>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 text-gray-400 mx-1" fill="none" viewbox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="text-gray-900 font-bold">Dubrovnik</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Destination -->
+    <section class="relative h-[60vh] min-h-[500px] flex items-end pb-16 overflow-hidden" aria-labelledby="hero-title" role="region">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.pexels.com/photos/343219/pexels-photo-343219.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Vue panoramique magnifique de Dubrovnik et de ses toits en tuiles rouges au coucher du soleil" loading="lazy" class="w-full h-full object-cover">
+            <div class="hero-gradient absolute inset-0"></div>
+            <div class="absolute inset-0 grain-texture"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl reveal-on-scroll">
+                <span class="inline-block bg-secondary text-white font-bold px-4 py-1.5 rounded-full text-sm mb-4 tracking-wide shadow-md uppercase">Coup de cœur</span>
+                <h1 id="hero-title" class="text-5xl md:text-7xl font-black text-white mb-4 leading-tight">Dubrovnik</h1>
+                <p class="text-xl md:text-2xl text-white/90 font-light leading-relaxed">
+                    La « Perle de l'Adriatique » vous invite à voyager dans le temps au cœur de ses remparts millénaires baignés par une mer de cristal.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro & Infos clés -->
+    <article class="py-16 bg-white grain-texture" aria-labelledby="intro-title" role="article">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 reveal-on-scroll">
+                    <h2 id="intro-title" class="text-3xl md:text-4xl font-black mb-6">Pourquoi visiter Dubrovnik ?</h2>
+                    <p class="text-lg text-neutral-600 leading-relaxed mb-6">
+                        Inscrite au patrimoine mondial de l'UNESCO, Dubrovnik est sans conteste la destination la plus emblématique de Croatie. Entourée de ses impressionnants remparts longs de près de 2 kilomètres, la vieille ville piétonne est un chef-d'œuvre d'architecture médiévale, de rues pavées de marbre et de toits en tuiles rouges.
+                    </p>
+                    <p class="text-lg text-neutral-600 leading-relaxed mb-6">
+                        Que vous flâniez sur la célèbre rue Stradun, preniez de la hauteur avec le téléphérique du mont Srđ, ou exploriez les criques secrètes en kayak, Dubrovnik offre une expérience inoubliable, mariant parfaitement culture historique, décors cinématographiques (célèbre pour son rôle dans Game of Thrones) et douceur de vivre méditerranéenne.
+                    </p>
+                </div>
+                <aside class="bg-neutral-50 rounded-3xl p-8 border border-neutral-100 shadow-md bento-card reveal-on-scroll" aria-labelledby="infos-cles-title">
+                    <h3 id="infos-cles-title" class="text-xl font-bold mb-6 flex items-center gap-2">
+                        <span class="text-primary">📌</span> Informations clés
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <span class="block font-bold text-neutral-800">Meilleure période</span>
+                                <span class="text-sm text-neutral-500">Mai, Juin, Septembre</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <div>
+                                <span class="block font-bold text-neutral-800">Durée recommandée</span>
+                                <span class="text-sm text-neutral-500">2 à 4 jours</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-primary shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg>
+                            <div>
+                                <span class="block font-bold text-neutral-800">Aéroport le plus proche</span>
+                                <span class="text-sm text-neutral-500">Aéroport de Dubrovnik (DBV) à 20km</span>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </article>
+
+    <!-- Incontournables (Bento Grid) -->
+    <section class="py-16 bg-neutral-50 grain-texture" aria-labelledby="incontournables-title" role="region">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center reveal-on-scroll">
+                <span class="inline-block bg-primary/10 text-primary font-semibold px-4 py-1.5 rounded-full text-sm mb-4">À voir, à faire</span>
+                <h2 id="incontournables-title" class="text-3xl md:text-5xl font-black">Les incontournables</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px]">
+                <!-- Remparts -->
+                <article class="lg:col-span-2 relative rounded-3xl overflow-hidden bento-card shadow-lg group cursor-pointer reveal-on-scroll" aria-labelledby="remparts-title">
+                    <img src="https://images.pexels.com/photos/7492138/pexels-photo-7492138.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Les imposants remparts historiques de pierre encerclant la vieille ville de Dubrovnik" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                    <div class="absolute bottom-0 p-6 md:p-8">
+                        <h3 id="remparts-title" class="text-2xl md:text-3xl font-black text-white mb-2">Les Remparts de la Ville</h3>
+                        <p class="text-white/80 text-sm md:text-base leading-relaxed max-w-xl">La promenade de 2 km sur ces fortifications spectaculaires offre des panoramas époustouflants sur la vieille ville et l'immensité de la mer Adriatique. À faire absolument tôt le matin ou au coucher du soleil.</p>
+                    </div>
+                </article>
+
+                <!-- Stradun -->
+                <article class="relative rounded-3xl overflow-hidden bento-card shadow-lg group cursor-pointer reveal-on-scroll" aria-labelledby="stradun-title">
+                    <img src="https://images.pexels.com/photos/33155669/pexels-photo-33155669.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="La célèbre rue principale Stradun de Dubrovnik, pavée de calcaire poli et bordée de bâtiments historiques" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 p-6">
+                        <h3 id="stradun-title" class="text-xl font-black text-white mb-2">Le Stradun (Placa)</h3>
+                        <p class="text-white/80 text-sm leading-relaxed">L'artère principale de la ville, pavée de calcaire poli par les siècles. Idéal pour admirer l'architecture baroque.</p>
+                    </div>
+                </article>
+
+                <!-- Téléphérique -->
+                <article class="relative rounded-3xl overflow-hidden bento-card shadow-lg group cursor-pointer reveal-on-scroll" aria-labelledby="srd-title">
+                    <img src="https://images.pexels.com/photos/10836116/pexels-photo-10836116.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Vue spectaculaire depuis le mont Srđ surplombant la vieille ville de Dubrovnik et la mer Adriatique" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 p-6">
+                        <h3 id="srd-title" class="text-xl font-black text-white mb-2">Le Mont Srđ</h3>
+                        <p class="text-white/80 text-sm leading-relaxed">Prenez le téléphérique pour atteindre le sommet et profitez d'une vue imprenable sur Dubrovnik et les îles Élaphites.</p>
+                    </div>
+                </article>
+
+                <!-- Île de Lokrum -->
+                <article class="relative rounded-3xl overflow-hidden bento-card shadow-lg group cursor-pointer reveal-on-scroll" aria-labelledby="lokrum-title">
+                    <img src="https://images.pexels.com/photos/12317263/pexels-photo-12317263.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Paysage naturel luxuriant de la paisible île de Lokrum, située face à Dubrovnik" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 p-6">
+                        <h3 id="lokrum-title" class="text-xl font-black text-white mb-2">Île de Lokrum</h3>
+                        <p class="text-white/80 text-sm leading-relaxed">Un petit coin de paradis à 15 min en bateau. Nature luxuriante, paons en liberté et monastère bénédictin.</p>
+                    </div>
+                </article>
+
+                <!-- Fort Lovrijenac -->
+                <article class="relative rounded-3xl overflow-hidden bento-card shadow-lg group cursor-pointer reveal-on-scroll" aria-labelledby="lovrijenac-title">
+                    <img src="https://images.pexels.com/photos/13222849/pexels-photo-13222849.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" alt="Le majestueux Fort Lovrijenac perché sur une falaise abrupte protégeant la baie de Dubrovnik" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 p-6">
+                        <h3 id="lovrijenac-title" class="text-xl font-black text-white mb-2">Fort Lovrijenac</h3>
+                        <p class="text-white/80 text-sm leading-relaxed">Surnommé le « Gibraltar de Dubrovnik », cette forteresse isolée offre un angle de vue unique sur les remparts ouest.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-50 border-t border-gray-200 text-gray-700" id="footer-main" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="text-sm text-gray-500">© <span id="year">2025</span> CapCroatie. Tous droits réservés.</p>
+            </div>
+            <div class="flex items-center gap-4">
+                
+            
+
+
+<!-- LANG_SWITCHER --><!-- /LANG_SWITCHER -->
+</div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle logic
+    function toggleMobileMenu() {
+        const menu = document.getElementById('navMobileMenu');
+        const hamburger = document.getElementById('navHamburger');
+        const isHidden = menu.classList.contains('hidden');
+        
+        if (isHidden) {
+            menu.classList.remove('hidden');
+            hamburger.setAttribute('aria-expanded', 'true');
+        } else {
+            menu.classList.add('hidden');
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    // Reveal on scroll logic
+    document.addEventListener("DOMContentLoaded", () => {
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+            observer.observe(el);
+        });
+    });
+</script>
+
+</body>
+</html>
